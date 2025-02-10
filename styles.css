@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+    background-image: url(imagens/universo.jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    box-shadow: 0 0 20px #6513b6;
+    background-image: url('./imagens/fundoPort.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    padding: 15px;
+    text-align: center;
+    transition: 0.5s ease, padding 0.5s ease; 
+    overflow:hidden; 
+    max-height: 400px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-family: 'WhatTheFont', fantasy;
+    font-size: 44px;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+nav ul {
+    font-family: fantasy;
+    list-style: none;
+    padding: 0;
+    font-size: 24px;
+}
+
+nav ul li {
+    display: inline-flex;
+    padding: 25px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+
+nav ul li a:hover {
+    color: #6513b6;
+    text-shadow: 2px 2px 10px white;
+    transform: translateY(-5px);
+}
+
+.link-div {
+    text-decoration: none;
+    color: #fff; 
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.h2 {
+    margin-bottom: 20px;
+    border-bottom: 4px solid #6513b6;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+#about {
+    max-width: 600px;
+}
+.card {
+    font-family: "Lucida Console", "Courier New", monospace;
+    max-width: 600px;
+    margin: 150px auto 0;
+    background-color: #1e1e1e;
+    box-shadow: 0 10px 90px #00000024;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px #fff;
+}
+
+.card p {
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.card .card-header {
+    position: relative;
+    height: 48px;
+}
+
+.card .card-header .profile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 1000px;
+    align-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 1.5px;
+    transform: translate(-50%, -50%);
+    border: 8px solid #6513b6;
+    box-shadow: 0 0 10px 0 #fff;
+}
+
+#projetos {
+    font-family: "Lucida Console", "Courier New", monospace;
+    clear: both;
+}
+
+#projetos a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contato h2 {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.projeto {
+    background-image: url(./imagens/fundoproject.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    font-family: cursive;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border: 1px solid #6513b6;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.projeto:hover {
+    box-shadow: 0px 0px 10px 8px #6513b6, inset 0px 0px  2px;
+    transform: translateY(-5px);
+}
+
+.redes-sociais {
+    display: inline-flex;
+    padding: 0 60px;
+    position: relative;
+    font-family: fantasy;
+}
+
+
+
+.redes-sociais a {
+    margin: 0 20px;
+    transition: transform 0.3s;
+    
+}
+
+.redes-sociais a:hover {
+    box-shadow: 0px 0px 10px 8px #6513b6, inset;
+    transform: translateY(-10px);
+}
+
+.redes-sociais img {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+}
+
+.hidden {
+    max-height: 0; /* Altura máxima quando oculto */
+    padding: 0; /* Remove o preenchimento quando oculto */
+}
+
+.toggle-button {
+    cursor: pointer;
+    font-size: 24px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.toggle-button:hover{
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 40px 10px; 
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav ul {
+        font-size: 18px; 
+    }
+
+    nav ul li {
+        padding: 15px; 
+    }
+
+    .card p {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .card {
+        width:80%;
+        margin: 100px auto 0; 
+        padding: 20px; 
+    }
+
+    .card .card-header .profile-img {
+        width: 70px; 
+        height: 70px;
+        position: relative;
+        left: 14%;
+    }
+
+    .redes-sociais img {
+        width: 50px;
+        height: 50px;
+        display:inline;
+    }
+
+    .redes-sociais {
+        display: inline-table;
+        padding: 1px;
+        position: relative;
+        left:35%;
+    }
+
+    .instagram {
+        position: relative;
+        right: 10px;
+        font-size: 20px;
+        font-style: oblique;
+        padding: 15px 0;
+    }
+    .Whatsapp {
+        position: relative;
+        right: 10px;
+        font-size: 20px;
+        font-style: oblique;
+        padding: 15px 0;
+    }
+    .Github {
+        position: relative;
+        font-size: 20px;
+        font-style: oblique;
+        padding: 15px 0;
+    }
+    .Linkedin {
+        position: relative;
+        right: 12px;
+        font-size: 20px;
+        font-style: oblique;
+        padding: 15px 0;
+    }
+}   
+
+/* pagina do projeto com React-Native*/
+
+.fundogif {
+    background-image: url(./imagens/fundo.gif);
+    position: relative;
+}
+
+.voltar {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 40px;
+    
+}
+
+
+.titulo1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.paragrafo {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.2;
+    display: inline-block;
+    width: 60%;
+    padding: 5px;
+}
+
+.paragrafo-after-imagem {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.2;
+    display: inline-block;
+    width: 50%;
+    padding: 5px;   
+    margin-top: 20px;
+}
+
+.observacao {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.observacao-link  {
+    text-decoration: none;
+    color: #fff ;
+}
+
+.container {
+    text-align: center;
+    align-items:center;
+}
+
+.container img {
+    width:60%;
+    margin-top: 2%;
+    height:60%;
+    background-size: contain;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px #fff
+}
+
+@media (max-width: 768px) {
+
+    .paragrafo {
+        width:80%;
+    }
+
+    .paragrafo-after-imagem {
+        width: 80%;
+    }
+
+}
+
